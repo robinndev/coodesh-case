@@ -1,9 +1,6 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <HeaderComponent />
+  <router-view />
 </template>
 
 <style lang="scss">
@@ -28,3 +25,13 @@ nav {
   }
 }
 </style>
+
+<script>
+import HeaderComponent from './components/header/HeaderComponent.vue';
+
+export default {
+  components: {
+    HeaderComponent,
+  },
+};
+</script>

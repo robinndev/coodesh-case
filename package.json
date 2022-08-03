@@ -10,7 +10,9 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "axios": "^0.27.2",
     "core-js": "^3.8.3",
+    "postcss-loader": "^7.0.1",
     "vue": "^3.2.13",
     "vue-router": "^4.0.3",
     "vuex": "^4.0.0"
@@ -28,6 +30,7 @@
     "@vue/eslint-config-airbnb": "^6.0.0",
     "@vue/test-utils": "^2.0.0-0",
     "@vue/vue3-jest": "^27.0.0-alpha.1",
+    "autoprefixer": "^10.4.8",
     "babel-jest": "^27.0.6",
     "cypress": "^9.7.0",
     "eslint": "^7.32.0",
@@ -35,8 +38,10 @@
     "eslint-plugin-vue": "^8.0.3",
     "eslint-plugin-vuejs-accessibility": "^1.1.0",
     "jest": "^27.0.5",
+    "postcss": "^8.4.14",
     "sass": "^1.32.7",
-    "sass-loader": "^12.0.0"
+    "sass-loader": "^12.0.0",
+    "tailwindcss": "^3.1.7"
   },
   "eslintConfig": {
     "root": true,
