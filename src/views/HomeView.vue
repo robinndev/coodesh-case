@@ -40,10 +40,10 @@
 
         <TableComponent/>
 
-        <div class="w-full h-8 flex items-center justify-center hover:bg-[#f2f4f5] mt-5">
+        <!-- <div class="w-full h-8 flex items-center justify-center hover:bg-[#f2f4f5] mt-5">
           <img class="w-10" src="../assets/refresh.png" alt="">
           <h3 class="font-sans font-medium">Load More...</h3>
-        </div>
+        </div> -->
     </section>
   </div>
 </template>
