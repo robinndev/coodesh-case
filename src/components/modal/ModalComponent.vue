@@ -8,7 +8,7 @@
 
         <div class="bg-white w-auto pb-8">
           <section class="w-full flex justify-center items-center py-8">
-            <img class="w-24 rounded-full" src="../../assets/user.jpg" alt="">
+            <img class="w-24 rounded-full" :src='infoModal.picture.large' alt="">
           </section>
           <section class="
           w-full

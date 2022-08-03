@@ -22,7 +22,7 @@ export default createStore({
   },
   actions: {
     getPeoples({ commit }) {
-      http.get('?results=9')
+      http.get('?results=50')
         .then((res) => {
           const respose = res.data.results;
           commit('SET_GETPEOPLES', respose);
