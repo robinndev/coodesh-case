@@ -24,6 +24,9 @@
         >
           <label class="w-full h-full" for="search">
             <input class="
+              outline-none
+              active:outline-none
+              focus:outline-none
               h-full
               w-full
               px-4
@@ -36,7 +39,6 @@
       </div>
 
         <TableComponent/>
-        <ModalComponent/>
 
         <div class="w-full h-8 flex items-center justify-center hover:bg-[#f2f4f5] mt-5">
           <img class="w-10" src="../assets/refresh.png" alt="">
@@ -47,28 +49,17 @@
 </template>
 
 <script>
-import axios from 'axios';
 import TableComponent from '../components/table/TableComponent.vue';
-import ModalComponent from '../components/modal/ModalComponent.vue';
 
 export default {
   name: 'HomeView',
   components: {
     TableComponent,
-    ModalComponent
   },
   methods: {
-    teste() {
-      axios.get('https://randomuser.me/api/')
-        .then((res) => {
-          console.log(res.data);
-        }).catch((err) => {
-          console.log(err);
-        });
-    },
   },
   mounted() {
-    this.teste();
+    this.$store.dispatch('getPeoples');
   },
 };
 </script>
