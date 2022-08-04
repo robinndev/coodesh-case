@@ -11,7 +11,11 @@
       <tr v-for="pagesApi in pagesApi" :key="pagesApi" class="border-2 h-8">
         <td class="border-2">{{ pagesApi.name.first }}</td>
         <td class="border-2">{{ pagesApi.gender }}</td>
-        <td class="border-2">{{ pagesApi.dob.date }}</td>
+        <td class="border-2">
+          {{
+            stringSlice(pagesApi.dob.date)
+          }}
+        </td>
         <td class="border-2">
           <button @click="commitOpenModal(pagesApi)" class="bg-slate-300 px-2 rounded color-red">
             View
@@ -98,6 +102,11 @@ export default {
       this.$store.commit('SET_INFOMODAL', data);
       // console.log('ARRAY', this.PeopleFiltered);
       // console.log(data);
+    },
+
+    stringSlice(arg) {
+      const stringSliced = arg.substring(0, 10);
+      return stringSliced;
     },
 
     previousPage() {
