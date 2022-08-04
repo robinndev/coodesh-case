@@ -1,10 +1,20 @@
 # Coodesh case by Pilar
 
+<div align="center">
+   <img alt="Foto página" title="Foto página 1" src="./assets/pageGithub.png" width="500px" />
+</div>
+
 Case de processo seletivo para [Pilar](https://www.linkedin.com/company/soupilar/)
 
 ## 🚀 Começando
 
-Para iniciar o projeto, basta rodar um:
+
+
+```
+yarn serve
+```
+
+Or
 
 ```
 yarn serve
