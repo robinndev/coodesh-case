@@ -3,7 +3,7 @@
     <table class="w-full border-2 h-auto">
       <ModalComponent />
       <tr>
-        <th class="border-2 h-12 bg-slate-300">Nome</th>
+        <th class="border-2 h-12 bg-slate-300">Name</th>
         <th class="border-2 bg-slate-300">Gender</th>
         <th class="border-2 bg-slate-300">Birth</th>
         <th class="border-2 bg-slate-300">Nacionality</th>
@@ -25,7 +25,6 @@
       <button
         @click="previousPage()"
         class="w-1/2 h-8 flex items-center justify-center hover:bg-[#f2f4f5] mt-5">
-        <img class="w-10" src="../../assets/refresh.png" alt="" />
         <h3 class="font-sans font-medium">Prevent</h3>
       </button>
 

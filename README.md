@@ -60,14 +60,15 @@ npm serve
 
 **DIFERENCIAIS**
 
-* **Diferencial 1 Adicionar um filtro por Gênero na tabela;** ✅
-* **Diferencial 2 Configurar o buscador para poder filtrar por nome e nacionalidade;** ✅
+* **Diferencial 1 Adicionar um filtro por Gênero na tabela** ✅
+* **Diferencial 2 Configurar o buscador para poder filtrar por nome e nacionalidade** ✅
 
-* **Diferencial 3 Adicionar o paginador rota para facilitar compartilhar o link e manter a posição na lista;** (Faltou terminar)
+* **Diferencial 3 Adicionar o paginador rota para facilitar compartilhar o link e manter a posição na lista** (Faltou terminar)
 
 ## 🛠️ Construído com
 
 * [Vue 3](https://vuejs.org/) - O framework web usado
+* [Vuex](https://vuex.vuejs.org) - Gerenciador de estados (store)
 * [Yarn](https://www.npmjs.com/package/yarn) - Gerenciador de pacotes
 * [Api](https://randomuser.me/api/) - Usada para gerar pacientes
 * [Tailwind](https://tailwindcss.com/) - Framework CSS
