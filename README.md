@@ -46,15 +46,15 @@ npm serve
 
 ## 📦 Funcionalidades
 
-**Listagem de usuários**
-**Busca por nome**
-**Busca por genêro**
-**Abrir modal**
-**Exibir informações detalhadas do paciente**
-**Paginação**
-**Passar página**
-**Voltar página**
-**Método para cortar a data e pegar apenas o necessário**
+* **Listagem de usuários**
+* **Busca por nome**
+* **Busca por genêro**
+* **Abrir modal**
+* **Exibir informações detalhadas do paciente**
+* **Paginação**
+* **Passar página**
+* **Voltar página**
+* **Método para cortar a data e pegar apenas o necessário**
 
 
 ## 🛠️ Construído com
@@ -64,7 +64,15 @@ npm serve
 * [Api](https://randomuser.me/api/) - Usada para gerar pacientes
 
 
-## ✒️ Autores
+## ✒️ ATENT
+
+ATENÇÃO!!! 
+<br/>
+Por ser uma API da coodesh, creio que há muitos requests em cimas, as vezes quando se atualiza a página da um erro na API, verifiquei a resposta era um erro que aparentemente vinha do servidor, caso não venha a aparecer os dados, apenas atualize a página...
+<br/>
+Ia colocar um alerta, mas como só consegui iniciar o projeto com um dia já de atraso, dei uma corridinha maior, pois no primeiro dia tive que prestar um tempo extra no projeto da empresa que trabalho!
+
+## ⚠️ ATENÇÃO
 
 * **Robson da Silva** - [Linkedin](https://www.linkedin.com/in/robinndev/)
 
