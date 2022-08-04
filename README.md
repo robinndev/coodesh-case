@@ -59,20 +59,22 @@ npm serve
 
 ## 🛠️ Construído com
 
-* [React](https://pt-br.reactjs.org/) - O framework web usado
+* [Vue 3](https://vuejs.org/) - O framework web usado
 * [Yarn](https://www.npmjs.com/package/yarn) - Gerenciador de pacotes
 * [Api](https://randomuser.me/api/) - Usada para gerar pacientes
+* [Tailwind](https://tailwindcss.com/) - Framework CSS
 
-
-## ✒️ ATENT
+## ⚠️ ATENÇÃO
 
 ATENÇÃO!!! 
 <br/>
+<br/>
 Por ser uma API da coodesh, creio que há muitos requests em cimas, as vezes quando se atualiza a página da um erro na API, verifiquei a resposta era um erro que aparentemente vinha do servidor, caso não venha a aparecer os dados, apenas atualize a página...
+<br/>
 <br/>
 Ia colocar um alerta, mas como só consegui iniciar o projeto com um dia já de atraso, dei uma corridinha maior, pois no primeiro dia tive que prestar um tempo extra no projeto da empresa que trabalho!
 
-## ⚠️ ATENÇÃO
+## ✒️ Autor
 
 * **Robson da Silva** - [Linkedin](https://www.linkedin.com/in/robinndev/)
 
