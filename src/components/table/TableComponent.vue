@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <table class="w-full border-2 mt-10">
+  <div class="mt-10">
+    <table class="w-full border-2 h-auto">
       <ModalComponent />
       <tr>
         <th class="border-2 h-12 bg-slate-300">Nome</th>
@@ -11,7 +11,7 @@
       <tr v-for="pagesApi in pagesApi" :key="pagesApi" class="border-2 h-8">
         <td class="border-2">{{ pagesApi.name.first }}</td>
         <td class="border-2">{{ pagesApi.gender }}</td>
-        <td class="border-2">{{ pagesApi.dob.age }}</td>
+        <td class="border-2">{{ pagesApi.dob.date }}</td>
         <td class="border-2">
           <button @click="commitOpenModal(pagesApi)" class="bg-slate-300 px-2 rounded color-red">
             View
@@ -61,8 +61,32 @@ export default {
     },
 
     pagesApi() {
-      const newPageArray = this.dataAllPeople.slice(9 * (this.stepPages - 1), 9 * this.stepPages);
+      // eslint-disable-next-line max-len
+      const newPageArray = this.peoplesFilterByCategory.slice(9 * (this.stepPages - 1), 9 * this.stepPages);
       return newPageArray;
+    },
+
+    PeopleFiltered() {
+      let arrayFiltered = [];
+
+      arrayFiltered = this.dataAllPeople.filter((item) => (
+        item.name.first.toLowerCase().indexOf(this.valueText.toLowerCase()) > -1
+      ));
+
+      return arrayFiltered;
+    },
+    peoplesFilterByCategory() {
+      // const filteredArray = [];
+
+      if (this.valueSelect !== null) {
+        const newArrayCategory = this.PeopleFiltered.filter(
+          (element) => element.gender === this.valueSelect,
+        );
+        console.log('CAIU NO IF', this.valueSelect);
+        console.log('ELEMENTO', newArrayCategory);
+        return newArrayCategory;
+      }
+      return this.PeopleFiltered;
     },
   },
   components: {
@@ -72,7 +96,8 @@ export default {
     commitOpenModal(data) {
       this.$store.commit('SET_TOGGLEMODAL', this.toggleModal);
       this.$store.commit('SET_INFOMODAL', data);
-      console.log(data);
+      // console.log('ARRAY', this.PeopleFiltered);
+      // console.log(data);
     },
 
     previousPage() {
@@ -82,17 +107,15 @@ export default {
     },
 
     NextPage() {
+      // eslint-disable-next-line max-len
       if (this.pagesApi.length >= 9 && this.dataAllPeople.length / (this.stepPages * 9) > 1) {
         this.stepPages += 1;
       } else {
         console.log(this.pagesApi.length);
       }
     },
-    // listItems(items, pageActual, limitItems) {
-    //   const result = [];
-    //   return result;
-    // },
   },
+  props: ['valueText', 'valueSelect'],
   mounted() {},
 };
 </script>
